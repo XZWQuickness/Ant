@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueness"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/back" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_back"
+
+            >
+
+            <TextView
+                android:id="@+id/bt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/shape_login_bule_lin"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@id/bt_search"
+                android:background="@drawable/shape_login_white_lin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search" />
+
+                <com.exz.antcargo.activity.view.NoCanncelEditText
+                    android:id="@+id/ed_key_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="搜索关键字 例如地名 路名"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tv_placeOfReceipt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="查收收货地"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="@color/lin_gray"></View>
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:id="@+id/tv_mudidi"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="目的地"
+            android:drawableRight="@drawable/selector_gary_sanjiao"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="@color/lin_gray"></View>
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:id="@+id/tv_chafa_time"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="出发时间"
+            android:drawableRight="@drawable/selector_gary_sanjiao"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="@color/lin_gray"></View>
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:id="@+id/tv_gongduo"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="更多"
+            android:drawableRight="@drawable/selector_gary_sanjiao"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/gary_lin"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_01"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+            <View
+                android:id="@+id/v_02"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+            <View
+                android:id="@+id/v_03"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+            <View
+                android:id="@+id/v_04"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/target_sousuo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toLeftOf="@id/iv_target"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/red_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="更多"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/gary_lin"></include>
+
+    <com.exz.antcargo.activity.xlistView.XListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></com.exz.antcargo.activity.xlistView.XListView>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_null_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zanwucheyuan" />
+    </LinearLayout>
+</LinearLayout>

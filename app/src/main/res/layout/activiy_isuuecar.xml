@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <com.exz.antcargo.activity.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/lin"
+                android:layout_marginTop="10dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_entruckingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_chaungche_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="日期"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_entruckingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_chaungche_time"
+                    android:hint="请选择装车日期"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <View style="@style/lin"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_time_duan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_time_duan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="时间"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_entruckingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_time_duan"
+                    android:hint="请选择装车时间"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <View style="@style/lin"></View>
+
+            <RelativeLayout
+
+                android:id="@+id/rl_shouhuodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_shouhuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="收货地"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_placeOfReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_shouhuo"
+                    android:drawableRight="@mipmap/next"
+                    android:hint="请选择收货地址"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/lin"
+                android:layout_marginLeft="20dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_jiduanquyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_jeiduan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="接单区域"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_distanceAround"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_jeiduan"
+                    android:hint="请选择可被点击的接单区域"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <View
+                style="@style/lin"
+                android:layout_marginLeft="20dp"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_mudidi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="目的地"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_mudidi"
+                    android:hint="请选择到达地址(选填)"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <View
+                style="@style/lin"
+                android:layout_marginLeft="90dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_xiangxi_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_null"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_destinationAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_null"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="请填写详细地址(选填)"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <View
+                style="@style/lin"
+                android:layout_marginTop="10dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_xuanzechelaing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="选择车辆"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_owner_Vehicle_Cer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_xuanzechelaing"
+                    android:hint="请选择发布的车辆"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/next" />
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <View
+                style="@style/lin"
+                android:layout_marginTop="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="顺风车"
+                    android:maxEms="4"
+                    android:minEms="4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:text="  否"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:text="  是"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yantuluming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_yantuluming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_yantu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="沿途路名"
+                        android:maxEms="4"
+                        android:minEms="4"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/next" />
+
+                    <TextView
+                        android:id="@+id/tv_alongRoad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/tv_yantu"
+                        android:layout_toRightOf="@+id/tv_yantu"
+                        android:hint="请选择沿途经过的路名"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <include layout="@layout/gary_lin"></include>
+            </LinearLayout>
+
+            <View
+                style="@style/lin"
+                android:layout_marginTop="10dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="请填写备注"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_note"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:gravity="center_vertical|top"
+                android:hint="请填写备注相关备注信息,仅限100字"
+                android:maxLength="100"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_gray"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15sp" />
+
+            <View style="@style/lin"></View>
+
+            <Button
+                android:id="@+id/bt_sumbint"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/shape_login_bule_lin"
+                android:padding="10dp"
+                android:text="提交发布"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"></View>
+        </LinearLayout>
+    </com.exz.antcargo.activity.view.MyScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+include ':app', ':Rong_Cloud_Android_IMKit_SDK_v2_7_2_stable', ':pop_lib', ':XImageView'
+include ':library:Common'
+include ':library:WheelPicker'
+include ':library:ColorPicker'

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">蚂蚁货的</string>
+    <string name="no_data">没有找到符合条件的车源</string>
+    <string name="shaunggou">隔开, 如 : 睢宁双沟 , 请写为 \"睢宁 双沟\"</string>
+</resources>

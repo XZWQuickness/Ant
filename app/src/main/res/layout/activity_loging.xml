@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"
+        android:id="@+id/include"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anthuode"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+        <include layout="@layout/gary_lin"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/user" />
+
+            <com.exz.antcargo.activity.view.NoCanncelEditText
+                android:id="@+id/ed_phonet_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:textColorHint="@color/text_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/lin"
+            android:layout_marginLeft="16dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/password" />
+
+            <com.exz.antcargo.activity.view.NoCanncelEditText
+                android:id="@+id/ed_ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textColorHint="@color/text_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View style="@style/lin"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_forget_password"
+            android:gravity="right"
+            android:text="忘记密码?"
+            android:textColor="@color/blueness"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_login_bule_lin"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_login_gray_lin"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blueness"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

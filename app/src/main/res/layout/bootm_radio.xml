@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#262A33"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <RadioButton
+            android:id="@+id/rb_main_1"
+            style="@style/style_main_bottom_rb"
+            android:drawableTop="@drawable/selector_rb_01"
+            android:gravity="center"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_main_2"
+            style="@style/style_main_bottom_rb"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_rb_02"
+            android:gravity="center"
+            android:text="物流" />
+
+        <RadioButton
+            android:id="@+id/rb_main_3"
+            style="@style/style_main_bottom_rb"
+            android:drawableTop="@drawable/selector_rb_03"
+            android:gravity="center"
+            android:text="我的" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/de_num"
+        style="@style/DemoMainNewMassage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

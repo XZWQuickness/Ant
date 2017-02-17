@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <com.exz.antcargo.activity.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="18sp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/blueness"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="出发地"
+                    android:textColor="@color/blueness"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/lin"></View>
+
+            <com.exz.antcargo.activity.view.NoScrollListView
+                android:id="@+id/lv_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.exz.antcargo.activity.view.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="18sp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/blueness"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="目的地"
+                    android:textColor="@color/blueness"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/lin"></View>
+
+            <com.exz.antcargo.activity.view.NoScrollListView
+                android:id="@+id/lv_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.exz.antcargo.activity.view.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/tujindi"
+
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="途径地"
+                    android:textColor="@color/yeelow"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/lin"></View>
+
+            <com.exz.antcargo.activity.view.NoScrollListView
+                android:id="@+id/lv_alongRoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.exz.antcargo.activity.view.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFAFAFA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/gongsijianjie"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="公司简介"
+                    android:textColor="@color/yeelow"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/lin"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="4dp"
+                android:text="公司详情"
+                android:drawableRight="@mipmap/next"
+                android:id="@+id/tv_content"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <View style="@style/lin"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/white"></View>
+
+        </LinearLayout>
+    </com.exz.antcargo.activity.view.MyScrollView>
+
+</LinearLayout>

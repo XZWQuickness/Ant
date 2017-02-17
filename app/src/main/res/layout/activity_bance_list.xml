@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_main_1"
+            style="@style/home_radio"
+            android:checked="true"
+            android:gravity="center"
+            android:text="账户充值" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/lin_gray"></View>
+
+        <RadioButton
+            android:id="@+id/rb_main_2"
+            style="@style/home_radio"
+            android:gravity="center"
+            android:text="账户提现" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/lin_gray"></View>
+
+        <RadioButton
+            android:id="@+id/rb_main_3"
+            style="@style/home_radio"
+            android:gravity="center"
+            android:text="信息扣费" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/lin_gray"></View>
+
+        <RadioButton
+            android:id="@+id/rb_main_4"
+            style="@style/home_radio"
+            android:gravity="center"
+            android:text="保证金" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/gary_lin"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_01"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"></View>
+
+            <View
+                android:id="@+id/v_02"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+            <View
+                android:id="@+id/v_03"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+            <View
+                android:id="@+id/v_04"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/blueness"
+                android:visibility="invisible"></View>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

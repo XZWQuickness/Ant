@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueness"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_back"
+
+            >
+
+            <Button
+                android:id="@+id/bt_search"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@id/bt_search"
+                android:background="@drawable/shape_login_white_lin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/search" />
+
+                <com.exz.antcargo.activity.view.NoCanncelEditText
+                    android:id="@+id/ed_keywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_search"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="搜索关键字 例如地名 路名"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="多个关键词请用"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空格"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shaunggou"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:id="@+id/tv_chufadi"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/selector_gary_sanjiao"
+            android:gravity="center_vertical|right"
+            android:text="出发地"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="@color/lin_gray"></View>
+
+        <com.exz.antcargo.activity.view.DrawableCenterButton
+            android:id="@+id/tv_mudidi"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/selector_gary_sanjiao"
+            android:gravity="center_vertical|right"
+            android:text="目的地"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <View style="@style/lin"></View>
+
+    <com.exz.antcargo.activity.xlistView.XListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></com.exz.antcargo.activity.xlistView.XListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_null_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zanwushuju" />
+    </LinearLayout>
+</LinearLayout>

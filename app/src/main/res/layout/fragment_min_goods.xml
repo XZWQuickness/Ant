@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.exz.antcargo.activity.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blueness"
+                    android:padding="20dp">
+
+                    <!-- border_outside_color 外部圆圈的颜色 -->
+
+                    <!-- border_inside_color 内部部圆圈的颜色 -->
+
+                    <!-- border_thickness 外圆和内圆的宽度 -->
+                    <com.exz.antcargo.activity.view.RoundImageView
+                        android:id="@+id/iv_head_phto"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:background="@mipmap/photo"
+                        imagecontrol:border_inside_color="#7EE0E0"
+                        imagecontrol:border_outside_color="#7EE0E0"
+                        imagecontrol:border_thickness="1dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_head_phto"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_nickname"
+                            style="@style/whiteTextView"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_account"
+                            style="@style/whiteTextView"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_huozhu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                             <ImageView
+                                  android:id="@+id/iv_gongsi"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="10dp"
+                                 />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/next_white" />
+                </RelativeLayout>
+
+
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_gognsi_renzheng"
+                    style="@style/witheRelativeLayout">
+
+                    <ImageView
+                        android:id="@+id/iv_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/gongsirenzheng" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_01"
+                        android:text="公司认证"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_next"
+                        android:background="@mipmap/next" />
+                    <TextView
+                        android:id="@+id/tv_gongsi_state"
+                        android:layout_toLeftOf="@id/iv_next"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/gary_lin"></include>
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_lishi_zuji"
+                    style="@style/witheRelativeLayout">
+
+                    <ImageView
+                        android:id="@+id/iv_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/lishizuji" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_toRightOf="@id/iv_02"
+                        android:text="历史足迹"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/next" />
+                </RelativeLayout>
+
+                <include layout="@layout/gary_lin"></include>
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_car_info_manage"
+                    style="@style/witheRelativeLayout">
+
+                    <ImageView
+                        android:id="@+id/iv_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/huoyuanxinxiguanli" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_03"
+                        android:text="货源信息管理"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/next" />
+                </RelativeLayout>
+
+                <include layout="@layout/gary_lin"></include>
+
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+                <RelativeLayout
+                    android:id="@+id/rl_huihua"
+                    style="@style/witheRelativeLayout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_huihua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/huihualiebiao" />
+
+                    <TextView
+                        android:id="@+id/tv_huahua_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_huihua"
+                        android:text="会话列表"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_rong_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@mipmap/next"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <include layout="@layout/gary_lin"></include>
+
+                <View
+                    style="@style/lin"
+                    android:layout_marginTop="10dp"></View>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_stting"
+                    style="@style/witheRelativeLayout">
+
+                    <ImageView
+                        android:id="@+id/iv_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/shezhi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_05"
+                        android:text="设置"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/next" />
+                </RelativeLayout>
+
+                <include layout="@layout/gary_lin"></include>
+
+
+            </LinearLayout>
+
+        </com.exz.antcargo.activity.view.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

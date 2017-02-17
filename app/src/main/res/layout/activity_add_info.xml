@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <View
+        style="@style/lin"
+        android:layout_marginTop="10dp"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_chexing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personitem"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tv_car_xing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车型"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_chexing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_car_xing"
+            android:drawableRight="@mipmap/next"
+            android:hint="请选择车型"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_gray"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <View
+        style="@style/lin"
+        android:layout_marginTop="10dp"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_car_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personitem"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tv_car_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车长"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_chechang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入车长"
+            android:maxLength="4"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:inputType="number"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_gray"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_car_xing"
+            android:text="米"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <View
+        style="@style/lin"
+        android:layout_marginTop="10dp"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_car_wide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personitem"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tv_car_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车宽"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_car_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入车宽"
+            android:maxLength="4"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:inputType="number"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_gray"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="米"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <View
+        style="@style/lin"
+        android:layout_marginTop="10dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personitem"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="载重"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请填写载重"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="4"
+            android:textColorHint="@color/text_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_car_xing"
+            android:text="吨"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="顺风车"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_checkbox"
+                android:text="  否"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/selector_checkbox"
+                android:text="  是"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View style="@style/lin"></View>
+
+    <Button
+        android:id="@+id/bt_sumbint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login_bule_lin"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

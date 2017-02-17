@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ChoiceLocationActivity">
+
+    <LinearLayout
+        android:id="@+id/sousuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:background="#00000000"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/ll_bt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                >
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="清除"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:id="@+id/btn_cancel"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_yellow_fill"
+                    />
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="确定"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_bule_fill"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_toLeftOf="@id/ll_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_location" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lin_gray"></View>
+
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:focusable="true">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/sousuo_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/buttton_blue_style"
+                android:drawableLeft="@drawable/search"
+                android:gravity="center_vertical"
+                android:hint="例如徐州 东站"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/sousuo_button"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/shape_login_bule_lin"
+                android:text="搜索"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ditu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lo"
+        android:layout_below="@+id/sousuo"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.amap.api.maps.MapView>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/location_1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/field_xheight"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_small"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/field_xheight"
+        android:background="@color/blueness"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_norside"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_large" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

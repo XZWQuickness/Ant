@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/gary_lin" />
+
+        <LinearLayout
+            android:id="@+id/rl_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_gray"
+                android:text="真实姓名" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/lin"
+            android:layout_marginLeft="14dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/id_car_num"
+                style="@style/TextView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_gray"
+                android:text="身份证号" />
+
+            <TextView
+                android:id="@+id/tv_id_car_num"
+                style="@style/TextView"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lin"
+            android:layout_marginLeft="14dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_gray"
+                android:text="联系方式" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/TextView"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lin"
+            android:layout_marginLeft="14dp"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_workcity"
+            android:background="@drawable/personitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_gray"
+                android:text="工作城市" />
+
+            <TextView
+                android:id="@+id/tv_workCity"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:drawableRight="@mipmap/next"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_gray"
+                android:hint="请选择工作城市"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View style="@style/lin"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.exz.antcargo.activity.view.RoundImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/shangchuantouxiang" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_marginTop="6dp"
+            android:text="编辑/添加头像" />
+
+    </LinearLayout>
+
+</RelativeLayout>

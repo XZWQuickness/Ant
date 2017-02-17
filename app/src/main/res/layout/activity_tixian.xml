@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="姓名"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_cardUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入您的姓名"
+            android:maxLines="1"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="银行卡号"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入您的银行卡号"
+            android:maxLines="1"
+            android:id="@+id/ed_cardNumber"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="开户行"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入开户行名称"
+            android:maxLines="1"
+            android:id="@+id/ed_bankName"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="金额(元)"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/ed_price"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="手机号"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入您的手机号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:id="@+id/ed_mobile"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gary_lin"></include>
+
+    <Button
+        android:id="@+id/bt_sumbint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login_bule_lin"
+        android:gravity="center"
+        android:text="确认提交"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
